@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.header {background:url(wedding-planner1.jpg);
+		background-size: 1350px 550px;
+		background-repeat: no-repeat;
+      padding-bottom: 200px;
+	  padding-left:0;
+	  padding-right:10px;
+	  height:300px;
+	width: 1342px;
+    text-align:center;
+    text-color:	white;}
+
+ul {
+    list-style-type: none;
+    margin:0;
+	width: 4000px
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+	border-bottom: 20px solid white;
+	border-top: 20px solid white;
+}
+
+li {
+    float: left;
+	border-right:150px solid white;
+	border-left:150px solid white;
+	
+}
+
+li a {
+    display: block;
+    color:	white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+<!--li a:hover {
+     border-bottom: 3px solid white;
+}-->
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: transparent;
+}
+
+.flip-card-front {
+  background:#FFB6C1;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#bcd4e6;
+  color: black;
+  transform: rotateY(180deg);
+}
+<!--.flip-card-back button {
+  border:10px solid black;
+  outline: 0;
+  padding: 0;
+  color:#D4AF37;
+  background-color:black;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+.flip-card-back button:hover {
+  opacity: 0.7;
+}-->
+.footer{
+	position: relative;
+    left: 0;
+	padding:40px;
+    bottom: 0;
+	height:200px;
+    width: 1262px;
+    background-color:#A9A9A9;
+    color: black;
+    text-align: left}
+.fa {
+  padding:10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+</style>
+</head>
+<body  bgcolor="white";>
+
+
+<div class="header">
+	<ul style="border-bottom:none;border-top:none;background-color:transparent;position:top;font-size:20px;">
+  <li style="border-right:none;border-left:none;"><a class="active" href="#home">Home</a></li>
+
+  <li style="border-right:none;border-left:none;"><a href="about.html">About</a></li>
+    <li style="border-right:none; border-left:none;"><a href="contact.html">Contact</a></li>
+	<li style="border-right:none; border-left:none;"><a href="bookmeeting.html">Book</a></li>
+</ul>
+	<p style="color:white; font-size: 40px; ">Welcome to</p>
+  	<h1 style="color:white;letter-spacing: 13px; font-size:80px;"><em><strong><i>Made in Heaven </i></strong></em></h1>
+	</div>
+	<h1 style="font-size:2px">.  </h1>
+		<p>.</p>
+	<h1 style="color:#FFB6C1; text-align:center; text-decoration: underline; "<em><strong>Choose from our services</strong></em></h1>
+	<p>.</p>
+	
+	<ul>
+	<li><a href="theme.html"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="theme.jpg"  style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style="text-decoration: underline;">Theme</h1> 
+	  <p style="font-size:28px">Choose a theme that best suits your personality.
+	</p><div>
+    </div>
+  </div>
+</div></a></li>
+<li style="border-top:27px solid white;"><a href="entertainment.html">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="music.jpg"  style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style="text-decoration: underline;">Entertainment</h1> 
+	  <p style="font-size:25px">Loosen up with some music and dance.
+	</p>
+    </div>
+  </div>
+</div></a>
+</li>
+</ul>
+	<ul>
+	<li style="border-right:125px solid white;"><a href="clothes.html">
+	<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="clothes.jpg"  style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style="text-decoration: underline;">Clothing and Make up</h1> 
+	  <p style="font-size:25px">Look your best on your wedding day.<br><br><br>
+	</p>
+    </div>
+  </div>
+</div></a></li>
+<li><a href="food.html">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="food.jpg"  style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style="text-decoration: underline;">Food</h1> 
+	  <p style="font-size:25px">Choose from our diverse food menu.<br>
+	</p>
+    </div>
+  </div>
+</div></a>
+</li>
+</ul>
+<div class="footer">
+	<p style="font-size:20px;"><br>	Contact :  </p>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+</div>
+
+</body>
+</html>

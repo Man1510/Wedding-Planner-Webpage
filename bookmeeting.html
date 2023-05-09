@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	background:url(loginbg.jpg);
+font-family: Arial, Helvetica, sans-serif;
+		width:100%;
+padding:30px;}\
+
+
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: black;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid black;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color:black;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+	font-size:30px;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+.signin {
+    background-color:transparent;
+    text-align: center;
+}
+input[type="date"]:not(.has-value):before{
+  color: gray;
+  content: attr(placeholder);
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+	width: 4000px
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+	border-bottom: 20px solid white;
+	border-top: 20px solid white;
+}
+
+li {
+    float: left;
+	border-right:150px solid white;
+	border-left:150px solid white;
+	
+}
+
+li a {
+    display: block;
+    color:	white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+	
+	li a:hover {
+     border-bottom: 3px solid white;}
+	 
+	 .hiddenCB div {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size:14px;
+  color:gray;
+}
+
+.hiddenCB input[type="checkbox"],
+.hiddenCB input[type="radio"] {
+  display: none;
+  
+}
+
+.hiddenCB label {
+  
+  cursor: pointer;
+}
+
+.hiddenCB input[type="checkbox"]+label:hover{
+  background: rgba(0, 128, 128, .8);
+  font-size:16px;
+}
+
+.hiddenCB input[type="checkbox"]:checked+label {
+  background: rgba(0, 128, 128, .4);
+  font-size:15px;
+}
+
+.hiddenCB input[type="checkbox"]:checked+label:hover{
+  background: rgba(0, 128, 128, 0, .7);
+}
+label {
+  padding: 4px 6px;
+  line-height: 190%;
+  outline-style: none;
+  transition: all .6s;
+}
+
+</style>
+</head>
+<body>
+<ul style="border-bottom:none;border-top:none;background-color:transparent;position:top;font-size:20px;">
+ 
+    <li style="border-right:none; border-left:none;"><a href="home.html">Home</a></li>
+	
+</ul>
+<form action="login.php" style="max-width:500px;margin:auto" method="POST">
+<div class="container">
+  <h2>Book an appointment now!</h2>
+  
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Full name" name="fullname" required  autocomplete="off">
+	    
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email" required autocomplete="off">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-home icon"></i>
+    <input class="input-field" type="text" placeholder="Address" name="address" required autocomplete="off">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-phone icon"></i>
+    <input class="input-field" type="number" placeholder="Phone Number" name="phno" required autocomplete="off">
+  </div>
+    
+  
+
+
+ <div class="input-container">
+    <i class="fa fa-calendar icon"></i>
+    <input class="input-field" type="date" placeholder="Select date ." name="chosendate" onchange="this.className=(this.value!=''?'has-value':'')" required autocomplete="off">
+  </div>
+   
+  </div>
+   <button type="submit" name="submit" class="btn" >Confirm Booking</button>
+  <br><br>
+  </form>
+
+</body>
+</html>
+
+</html>
